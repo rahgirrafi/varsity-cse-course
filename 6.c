@@ -39,10 +39,7 @@ bool unique = true;
             printf("%d",arr[i]);
         if(i< n-1)
             printf(" ");
-
     }   
-    
-
     return 0;
 }
 
