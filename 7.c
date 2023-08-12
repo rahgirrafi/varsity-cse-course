@@ -16,7 +16,6 @@ int main() {
         arr3[i]=arr1[i];
         arr3[i+n]=arr2[i];
     }
-
 //I know merge sort is much more time efficient but amar abar eishob code khatay lekha lagbe ;-; So ei koyta element er jonno ami merge sort er otto boro function likhte raji na. No cap!
     for (int i = 1; i < n; i++) {
         int key = arr3[i];
@@ -31,7 +30,6 @@ int main() {
     printarray(arr3,2*n);
 
 }
-
 //created this  function because amar bar bar array print korar jonno etto kichu likhte bhallge na -_-
 void printarray(int arr[], int n) {
     for (int i = 0; i < n; i++)
@@ -41,4 +39,3 @@ void printarray(int arr[], int n) {
             printf(" ");
     }   
 }
-
