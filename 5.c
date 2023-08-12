@@ -13,7 +13,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         marker[i]= -1;
     }
-    bool is_duplicate = false;
+bool is_duplicate = false;
 
     for (int i = 0; i < n; i++)
     {
@@ -32,17 +32,18 @@ int main() {
             marker[i] = 1;
         }
     }
-
     int count =0;
+
      for (int i = 0; i < n; i++)
      {
         if(marker[i] ==1)
             count++;
      }
-     
+
      printf("%d",count);
+     
+    
 
     return 0;
 }
-
 
