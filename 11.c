@@ -16,6 +16,8 @@ int main() {
     printarray(arr,n);
 }
 
+
+//---------------Functions-----------------
 void pop(int arr[], int indice, int *total)
 {
     for (int i = indice-1; i < *total; i++)
