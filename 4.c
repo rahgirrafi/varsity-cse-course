@@ -1,40 +1,40 @@
 #include <stdio.h>
-#include<stdbool.h>
-int is_present(int *arr[],int elementNnm, int check);
-int main(){
-    int arr[50],n,arr2[20], *ptr;
-    bool is_present =false;
-    scanf("%d",&n);
-    for (int i = 0; i < n; i++)
-    {
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    for (int i = 0; i < 20; i++)
-    {
-        arr2[i]=0;
+
+    int frequency[n];
+    for (int i = 0; i < n; i++) {
+        frequency[i] = -5; 
     }
-    int ind=0;
-    for(int i =0; i<n; i++)
-    {
-        for(int j=0; j<20;j++)
-        {
-            if(arr2[j]==arr[i])
-                {
-                    is_present=true;
-                    break;
-                }
-            if(j == 20-1)
-                is_present=false;
+
+    for (int i = 0; i < n; i++) {
+        int count = 1;
+
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                frequency[j] = 0;  // Mark the element as counted
+            }
         }
-        if(!is_present)
-        {
-            arr2[ind]=arr[i];
-            ind++;
+
+        if (frequency[i] != 0) {
+            frequency[i] = count;
         }
     }
-    for (int i = 0; i <= ind; i++)
-    {
-        printf("%d ",arr2[i]);
+
+    // Display frequency of each element
+    for (int i = 0; i < n; i++) {
+        if (frequency[i] != 0) {
+            printf("%d:%d\n", arr[i], frequency[i]);
+        }
     }
-    
+
+    return 0;
 }
