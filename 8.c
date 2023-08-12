@@ -44,7 +44,5 @@ void insertelements(int arr[], int n) {
     {
         scanf("%d",&arr[i]);
     }
-    
-    
 }
 
