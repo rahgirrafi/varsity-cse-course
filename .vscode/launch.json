@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/9",
+            "program": "${workspaceFolder}/14",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -32,7 +32,7 @@
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "${workspaceFolder}/main",
+            "program": "${workspaceFolder}/14",
             "MIMode": "gdb",
             "setupCommands": [
                 {
