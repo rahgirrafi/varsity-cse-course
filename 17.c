@@ -42,7 +42,4 @@ int main(){
     scanf("%d",&x);
     ascending_insertion_sort(arr,n);
     printf("%d", binary_search(arr,0,n,x));
-    
-
-    
 }
