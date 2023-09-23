@@ -1,0 +1,16 @@
+push:
+    if 
+        Top == size do
+        print stack overflow
+    otherwise:
+        Top := Top + 1
+        Input from user and save it in value var
+        Stack[Top] := value
+pop:     
+    if 
+        Top == 0 do  
+        print stack Underflow
+    otherwise 
+        Value := Stack[Top]
+        Top := Top-1
+        return value
