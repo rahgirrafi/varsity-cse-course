@@ -16,16 +16,14 @@ struct student {
 
 struct student Student;
 
-// for(int i = 0; i<studentNUmber; i++){
     printf("First Name: ");
     fgets(Student.firstName,50,stdin);
     printf("Last Name: ");
     fgets(Student.lastName,50, stdin);
     printf("Roll: ");
     scanf("%d", &Student.roll);
-// }
 
-// for(int i=0; i<studentNUmber; i++){
+
     if(prime(Student.roll)){
         strcpy(Student.eduMail,Student.firstName);
         strcat(Student.eduMail,Student.lastName);
@@ -39,13 +37,12 @@ struct student Student;
         strcat(Student.eduMail,"@gmail.com");
     }
     
-    // for (int i = 0; i < studentNUmber; i++)
-    // {
+
         printf("%s",Student.firstName);
         printf("%s", Student.lastName);
         printf("\n");
         printf("%s",Student.eduMail);
-    // }
+ 
     
 
 }
