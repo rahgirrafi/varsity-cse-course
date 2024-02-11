@@ -14,7 +14,6 @@ class student{
         roll = r;
         grade = g;
     }
-
 };
 //Create an array of objects.
 student s[3] = {student("Rahim", 1, 'A'), student("Karim", 2, 'B'), student("Faruk", 3, 'C')};
@@ -24,12 +23,6 @@ for(int i = 0; i < 3; i++){
     cout << "Name: " << s[i].name << endl;
     cout << "Roll: " << s[i].roll << endl;
     cout << "Grade: " << s[i].grade << endl;
-
-
-
-
-
-
 
 }
 
